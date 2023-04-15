@@ -1,0 +1,26 @@
+POST http://localhost:8000/api/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name" : "Sammi Aldhi Yanto",
+    "email": "sammidev4@gmail.com",
+    "password": "sammidev123",
+    "password_confirmation": "sammidev123"
+}
+
+###
+
+POST http://localhost:8000/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "sammidev4@gmail.com",
+    "password": "sammidev123"
+}
+###
+
+GET http://localhost:8000/api/auth/user-profile
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODE1NjMwNDksImV4cCI6MTY4MTU2NjY0OSwibmJmIjoxNjgxNTYzMDQ5LCJqdGkiOiJ4TTYxb2lPdXlwRWJRQ3FWIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Jy5laI-GFAzGYkmmTNhS2I-EfvmifH9D3hIGYnOvsHk
